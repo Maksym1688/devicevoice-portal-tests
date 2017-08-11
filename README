@@ -10,6 +10,32 @@ sudo pip3 install virtualenv
 virtualenv ./env
 ./env/bin/pip install -r ./requirements.txt
 
+# GIT
+
+# clone repository on new machine:
+git clone https://github.com/Maksym1688/devicevoice-portal-tests.git 
+cd ./devicevoice-portal-tests
+# see INSTALL
+
+Update repository:
+git pull
+
+See diff of modified files:
+git diff
+
+For update modified files (before commit):
+git add -u
+
+For add new (untracked) files (before commit):
+git add FILENAME
+
+Commit changes:
+git commit -m "COMMIT MESSAGE"
+
+push changes to repository (sync with remote):
+git push
+
+
 # RUNNING TESTS
 ./env/bin/pytest
 
