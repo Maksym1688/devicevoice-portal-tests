@@ -1,10 +1,29 @@
 INSTALL
-# for osx
-# 1. install homebrew
+
+# OSX prerequisities
+# install homebrew https://brew.sh/
 brew install python3
+brew cask install chrome
+brew install chromedriver
+
 sudo pip3 install virtualenv
 virtualenv ./env
 ./env/bin/pip install -r ./requirements.txt
 
 # RUNNING TESTS
 ./env/bin/pytest
+
+Running specific test file:
+./env/bin/pytest tests/test_android.py
+
+Running specific test:
+./env/bin/pytest 'tests/test_android.py::test_unexpected_http_status'
+
+Running tests without stdout/stderr supress:
+./env/bin/pytest -s
+
+Running tests with stop on first fail:
+./env/bin/pytest -x
+
+Running tests with pdb on fail:
+./env/bin/pytest --pdb
