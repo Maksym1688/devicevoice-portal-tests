@@ -1,0 +1,10 @@
+INSTALL
+# for osx
+# 1. install homebrew
+brew install python3
+sudo pip3 install virtualenv
+virtualenv ./env
+./env/bin/pip install -r ./requirements.txt
+
+# RUNNING TESTS
+./env/bin/pytest

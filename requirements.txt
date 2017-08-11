@@ -1,0 +1,6 @@
+pytest
+selenium
+pdbpp
+ipython
+pytest-flake8
+pytest-variables[yaml]
